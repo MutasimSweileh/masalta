@@ -84,16 +84,16 @@
                     <!-- Begin Footer Block Area -->
                     <div class="col-lg-4 col-md-3 col-sm-6">
                         <div class="footer-block">
-                            <h3 class="footer-block-title">quick links</h3>
+                            <h3 class="footer-block-title"><?= plang('روابط سريعة', 'quick links') ?></h3>
                             <ul class="qq-links list-unstyled">
-                                <li><a href="<?= $core->getPageUrl("index" . $plang) ?>" title="">Home</a></li>
-                                <li><a href="<?= $core->getPageUrl("about" . $plang) ?>" title="">About Us</a></li>
-                                <li><a href="<?= $core->getPageUrl("products" . $plang) ?>" title="">Products</a></li>
-                                <li><a href="<?= $core->getPageUrl("services" . $plang) ?>" title="">Services</a></li>
-                                <li><a href="<?= $core->getPageUrl("gallery" . $plang) ?>" title="">Gallery</a></li>
-                                <li><a href="<?= $core->getPageUrl("video" . $plang) ?>" title="">Videos</a></li>
-                                <li><a href="<?= $core->getPageUrl("order" . $plang) ?>" title="">order now</a></li>
-                                <li><a href="<?= $core->getPageUrl("contact" . $plang) ?>" title="">Contact</a></li>
+                                <li><a href="<?= $core->getPageUrl("index" . $plang) ?>" title=""><?= getTitle("index" . $plang) ?></a></li>
+                                <li><a href="<?= $core->getPageUrl("about" . $plang) ?>" title=""><?= getTitle("about" . $plang) ?></a></li>
+                                <li><a href="<?= $core->getPageUrl("products" . $plang) ?>" title=""><?= getTitle("products" . $plang) ?></a></li>
+                                <li><a href="<?= $core->getPageUrl("services" . $plang) ?>" title=""><?= getTitle("services" . $plang) ?></a></li>
+                                <li><a href="<?= $core->getPageUrl("gallery" . $plang) ?>" title=""><?= getTitle("gallery" . $plang) ?></a></li>
+                                <li><a href="<?= $core->getPageUrl("video" . $plang) ?>" title=""><?= getTitle("video" . $plang) ?></a></li>
+                                <li><a href="<?= $core->getPageUrl("order" . $plang) ?>" title=""><?= getTitle("order" . $plang) ?></a></li>
+                                <li><a href="<?= $core->getPageUrl("contact" . $plang) ?>" title=""><?= getTitle("contact" . $plang) ?></a></li>
                             </ul>
                         </div>
                     </div>
@@ -103,15 +103,15 @@
                         <!-- Begin Footer Newsletter Area -->
                         <div class="footer-newsletter">
                             <div class="footer-block">
-                                <h3 class="footer-block-title">newsletter</h3>
+                                <h3 class="footer-block-title"><?= plang('النشرة الإخبارية', 'newsletter') ?></h3>
                                 <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="footer-subscribe-form validate" novalidate="">
 
-                                    <p>Follow us to get the latest news and updates</p>
+                                    <p><?= plang('تابعنا للحصول على آخر الأخبار والتحديثات', 'Follow us to get the latest news and updates') ?></p>
 
                                     <div id="mc_embed_signup_scroll">
                                         <div id="mc-form" class="mc-form subscribe-form form-group">
-                                            <input id="mc-email" name="email" type="email" autocomplete="off" placeholder="Enter your email">
-                                            <button class="btn thm-btn thm-bg" type="submit" name="subscribe" value="subscribe" id="mc-submit">Subscribe</button>
+                                            <input id="mc-email" name="email" type="email" autocomplete="off" placeholder="<?= plang("أدخل بريدك الإلكتروني", "Enter your email") ?>">
+                                            <button class="btn thm-btn thm-bg" type="submit" name="subscribe" value="subscribe" id="mc-submit"><?= plang('الإشتراك', 'Subscribe') ?></button>
                                         </div>
                                     </div>
                                 </form>

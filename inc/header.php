@@ -319,7 +319,6 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
             width: 100%;
             position: relative;
             padding: 0px;
-            float: left;
             height: 100%;
             overflow: hidden;
         }
@@ -374,7 +373,6 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
             border: none;
             border-top: 0px;
             width: 100% !important;
-            background: #f2f2f2;
             display: inline-block;
         }
 
@@ -1139,18 +1137,234 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
         <style type="text/css">
             @FONT-FACE {
 
-                font-family: "hind";
+                font-family: "Poppins";
                 src: url("css/DroidKufi-Regular.ttf");
             }
 
             @FONT-FACE {
-                font-family: "med";
+                font-family: "Open Sans";
                 src: url("css/DroidKufi-Regular.ttf");
+            }
+
+            /* ol.breadcrumb li.breadcrumb-item:before {
+                color: #fff;
+                font-family: "Font Awesome 5 Free";
+                content: "\f060";
+            } */
+            .blog-mini-post>a+.blog-mini-post-info {
+                flex: 0 0 calc(100% - 3.75rem);
+                max-width: calc(100% - 3.75rem);
+                padding-left: 0;
+                padding-right: 1.125rem;
+            }
+
+            ol.breadcrumb li.breadcrumb-item+li.breadcrumb-item {
+                margin-right: 0.75rem;
+                margin-left: 0;
+                padding-right: 1.5625rem;
+                padding-left: 0;
+            }
+
+            .widget2.category_widget ul li a {
+                float: right;
+            }
+
+            ol.breadcrumb li.breadcrumb-item+li.breadcrumb-item:before {
+                color: #fff;
+                content: "\f060";
+                right: 0;
+                left: auto;
+            }
+
+            ul li,
+            ol li,
+            a,
+            body,
+            p {
+                font-family: "DroidKufi-Regular";
+
+            }
+
+            .post-info-bottom>span i,
+            .post-meta>li i {
+                margin-right: 0;
+                margin-left: 7px;
+            }
+
+            .post-box {
+                margin-bottom: 1rem;
+                background: #fff;
+                direction: rtl;
+            }
+
+            .flaticon-arrow-pointing-to-right:before {
+                content: "\f11b";
+            }
+
+            .topbar-links>li:not(:first-child):before {
+
+                right: 0;
+                left: auto;
             }
 
             .footer-top h3.widget-title,
             .widget-title {
                 padding-right: 10px;
+            }
+
+            .footer-newsletter .form-group input {
+                background: #fff;
+                border: 1px solid #d5d5d5;
+                padding: 0 10px 0 135px;
+                height: 53px;
+                border-radius: 8px;
+                width: 100%;
+            }
+
+            .toggle-item>h4 {
+
+                padding: 1.0875rem 2.8125rem 1.0875rem 2.8125rem;
+
+            }
+
+            .toggle-item>h4 span {
+
+                right: 10px;
+                left: auto;
+            }
+
+            .slick-slider {
+                direction: ltr;
+            }
+
+            .toggle {
+                padding-left: 6.25rem;
+                padding-right: 0;
+            }
+
+            .banner-inner>p {
+                font-size: 1.125rem;
+                line-height: 2rem;
+                display: inline-block;
+                max-width: 100%;
+                display: block;
+            }
+
+            @media (max-width: 1605px) {
+                .slick-slider:not(.feat-caro):not(.shop-detail-nav-caro)>button.slick-prev {
+                    left: 15.3%;
+                    right: auto;
+                }
+
+                .slick-slider:not(.feat-caro):not(.shop-detail-nav-caro)>button.slick-next {
+                    left: 10.8%;
+                    right: auto;
+                }
+            }
+
+            .qq-links li {
+
+                padding-right: 25px;
+                float: right;
+                padding-left: 0;
+            }
+
+            .ter-links li:after,
+            .qq-links li:after {
+                right: 0;
+                left: auto;
+            }
+
+            .footer-newsletter .form-group .btn {
+
+                left: 4px;
+                right: auto;
+            }
+
+            .decrepation-sl {
+
+                right: 50px;
+                left: auto;
+            }
+
+            @media (max-width: 750px) {
+                .decrepation-sl {
+                    width: 100%;
+                    right: 50px;
+                    left: auto;
+                }
+
+                .toggle {
+                    padding-left: 0;
+                }
+            }
+
+            .ter-links li:after,
+            .qq-links li:after {
+                content: "\f11b";
+            }
+
+            nav>div ul ul {
+                position: absolute;
+                right: 0;
+                left: auto;
+                padding-right: 0;
+            }
+
+            .header-right-btns>a {
+
+                margin-left: 0;
+            }
+
+            .rspn-srch>input {
+
+                padding: 0 5% 0 3.125rem;
+                width: 100%;
+            }
+
+            .rsnp-mnu>ul li.menu-item-has-children>a::before {
+                left: 0;
+                right: auto;
+            }
+
+            .rspn-srch>button {
+
+                left: 10px;
+                right: auto;
+            }
+
+            nav {
+
+                padding-right: 0;
+                padding: 0;
+            }
+
+            nav>div>ul>li {
+                color: #fff;
+                margin-left: 2.8125rem;
+                margin-right: 0;
+            }
+
+            .topbar-links>li:not(:first-child) {
+                margin-right: 1rem;
+                padding-right: 1.0625rem;
+                margin-left: 0;
+                padding-left: 0;
+
+            }
+
+            .topbar-info-list>li i {
+                margin-left: 10px;
+            }
+
+            .topbar-info-list>li:not(:first-child) {
+                margin-right: 4.0625rem;
+            }
+
+            .logo-info-bar-inner .top-info-wrap,
+            .logo-info-bar-inner .social-links {
+                float: left;
+
             }
 
             .footer-top input {
@@ -2596,8 +2810,9 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
                             <li><i class="thm-clr far fa-envelope-open"></i><a href="javascript:void(0);" title=""><?= getValue('email') ?></a></li>
                         </ul>
                         <ul class="topbar-links mb-0 list-unstyled d-inline-flex">
-                            <li><a href="<?= $core->getPageUrl("career" . $plang) ?>" title="">Careers</a></li>
-                            <li><a href="<?= $core->getPageUrl("mission" . $plang) ?>" title="">Mission</a></li>
+                            <li><a href="<?= $core->getPageUrl("career" . $plang) ?>" title=""><?= getTitle("career" . $plang) ?></a></li>
+                            <li><a href="<?= $core->getPageUrl("mission" . $plang) ?>" title=""><?= getTitle("mission" . $plang) ?></a></li>
+                            <li><a href="<?= plang($core->getPageUrl("index"), $core->getPageUrl("indexarabic")) ?>" class="theme-btn"><?= plang('English', 'Arabic') ?></a></li>
                         </ul>
                     </div>
                 </div>
@@ -2625,7 +2840,7 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
                         <div class="top-info-wrap d-inline-flex flex-wrap justify-content-between align-items-center">
                             <div class="call-us">
                                 <i class="thm-clr flaticon-phone-call"></i>
-                                <strong>Phone Services</strong>
+                                <strong><?= plang('خدمات الهاتف', 'Phone Services') ?></strong>
                                 <strong><?= getValue("header_phone") ?></strong>
                             </div>
                         </div>
@@ -2641,13 +2856,14 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
 
 
                                 <li class="active">
-                                    <a href="<?= $core->getPageUrl("index" . $plang) ?>" title="">Home</a>
+
+                                    <a href="<?= $core->getPageUrl("index" . $plang) ?>" title=""><?= getTitle("index" . $plang) ?></a>
                                 </li>
 
-                                <li><a href="<?= $core->getPageUrl("about" . $plang) ?>" title="">About Us</a></li>
+                                <li><a href="<?= $core->getPageUrl("about" . $plang) ?>" title=""><?= getTitle("about" . $plang) ?></a></li>
 
                                 <li class="menu-item-has-children">
-                                    <a href="<?= $core->getPageUrl("products" . $plang) ?>" title="">Products</a>
+                                    <a href="<?= $core->getPageUrl("products" . $plang) ?>" title=""><?= getTitle("products" . $plang) ?></a>
                                     <ul class="mb-0 list-unstyled">
 
                                         <? $variable = $core->getproducts([]);
@@ -2661,26 +2877,26 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
                                 </li>
 
                                 <li>
-                                    <a href="<?= $core->getPageUrl("services" . $plang) ?>" title="">Services</a>
+                                    <a href="<?= $core->getPageUrl("services" . $plang) ?>" title=""><?= getTitle("services" . $plang) ?></a>
                                 </li>
 
 
                                 <li class="menu-item-has-children">
-                                    <a href="javascript:void(0);" title="">Media Center</a>
+                                    <a href="javascript:void(0);" title=""><?= plang("مركز الوسائط", "Media Center") ?></a>
                                     <ul class="mb-0 list-unstyled">
-                                        <li><a href="<?= $core->getPageUrl("gallery" . $plang) ?>" title="">Gallery</a></li>
-                                        <li><a href="<?= $core->getPageUrl("video" . $plang) ?>" title="">Videos</a></li>
+                                        <li><a href="<?= $core->getPageUrl("gallery" . $plang) ?>" title=""><?= getTitle("gallery" . $plang) ?></a></li>
+                                        <li><a href="<?= $core->getPageUrl("video" . $plang) ?>" title=""><?= getTitle("video" . $plang) ?></a></li>
                                     </ul>
                                 </li>
 
 
-                                <li><a href="<?= $core->getPageUrl("news" . $plang) ?>" title="">News</a></li>
-                                <li><a href="<?= $core->getPageUrl("contact" . $plang) ?>" title="">Contact Us</a></li>
+                                <li><a href="<?= $core->getPageUrl("news" . $plang) ?>" title=""><?= getTitle("news" . $plang) ?></a></li>
+                                <li><a href="<?= $core->getPageUrl("contact" . $plang) ?>" title=""><?= getTitle("contact" . $plang) ?></a></li>
                             </ul>
                         </div>
 
                         <div class="header-right-btns">
-                            <a class="get-quote" href="<?= $core->getPageUrl("order" . $plang) ?>" title="">Order Now<i class="flaticon-arrow-pointing-to-right"></i></a>
+                            <a class="get-quote" href="<?= $core->getPageUrl("order" . $plang) ?>" title=""><?= getTitle("order" . $plang) ?><i class="flaticon-arrow-pointing-to-right"></i></a>
                         </div>
                     </nav>
                 </div>
@@ -2702,13 +2918,13 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
                             <ul class="mb-0 list-unstyled d-inline-flex">
 
                                 <li class="active">
-                                    <a href="<?= $core->getPageUrl("index" . $plang) ?>" title="">Home</a>
+                                    <a href="<?= $core->getPageUrl("index" . $plang) ?>" title=""><?= getTitle("index" . $plang) ?></a>
                                 </li>
 
-                                <li><a href="<?= $core->getPageUrl("about" . $plang) ?>" title="">About Us</a></li>
+                                <li><a href="<?= $core->getPageUrl("about" . $plang) ?>" title=""><?= getTitle("about" . $plang) ?></a></li>
 
                                 <li class="menu-item-has-children">
-                                    <a href="<?= $core->getPageUrl("products" . $plang) ?>" title="">Products</a>
+                                    <a href="<?= $core->getPageUrl("products" . $plang) ?>" title=""><?= getTitle("products" . $plang) ?></a>
                                     <ul class="mb-0 list-unstyled">
                                         <? $variable = $core->getproducts([]);
                                         foreach ($variable as $k => $v) {
@@ -2721,21 +2937,21 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
                                 </li>
 
                                 <li>
-                                    <a href="<?= $core->getPageUrl("services" . $plang) ?>" title="">Services</a>
+                                    <a href="<?= $core->getPageUrl("services" . $plang) ?>" title=""><?= getTitle("services" . $plang) ?></a>
                                 </li>
 
 
                                 <li class="menu-item-has-children">
-                                    <a href="javascript:void(0);" title="">Media Center</a>
+                                    <a href="javascript:void(0);" title=""><?= plang("مركز الوسائط", "Media Center") ?></a>
                                     <ul class="mb-0 list-unstyled">
-                                        <li><a href="<?= $core->getPageUrl("gallery" . $plang) ?>" title="">Gallery</a></li>
-                                        <li><a href="<?= $core->getPageUrl("video" . $plang) ?>" title="">Videos</a></li>
+                                        <li><a href="<?= $core->getPageUrl("gallery" . $plang) ?>" title=""><?= getTitle("gallery" . $plang) ?></a></li>
+                                        <li><a href="<?= $core->getPageUrl("video" . $plang) ?>" title=""><?= getTitle("video" . $plang) ?></a></li>
                                     </ul>
                                 </li>
 
 
-                                <li><a href="<?= $core->getPageUrl("news" . $plang) ?>" title="">News</a></li>
-                                <li><a href="<?= $core->getPageUrl("contact" . $plang) ?>" title="">Contact Us</a></li>
+                                <li><a href="<?= $core->getPageUrl("news" . $plang) ?>" title=""><?= getTitle("news" . $plang) ?></a></li>
+                                <li><a href="<?= $core->getPageUrl("contact" . $plang) ?>" title=""><?= getTitle("contact" . $plang) ?></a></li>
                             </ul>
                         </div>
                     </nav>
@@ -2751,8 +2967,8 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
                     <a href="<?= getValue("linkedin") ?>" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a href="<?= getValue("youtube") ?>" title="Google Plus" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
-                <form class="rspn-srch">
-                    <input type="text" placeholder="Enter Your Keyword" />
+                <form class="rspn-srch" method="post" action="<?= $core->getPageUrl("products" . $plang) ?>">
+                    <input type="text" placeholder="<?= plang("ادخل كلة البحث", "Enter Your Keyword") ?>" />
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
@@ -2770,13 +2986,13 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
                 <span class="rspn-mnu-cls"><i class="fa fa-times"></i></span>
                 <ul class="mb-0 list-unstyled w-100">
                     <li class="active">
-                        <a href="<?= $core->getPageUrl("index" . $plang) ?>" title="">Home</a>
+                        <a href="<?= $core->getPageUrl("index" . $plang) ?>" title=""><?= getTitle("index" . $plang) ?></a>
                     </li>
 
-                    <li><a href="<?= $core->getPageUrl("about" . $plang) ?>" title="">About Us</a></li>
+                    <li><a href="<?= $core->getPageUrl("about" . $plang) ?>" title=""><?= getTitle("about" . $plang) ?></a></li>
 
                     <li class="menu-item-has-children">
-                        <a href="<?= $core->getPageUrl("products" . $plang) ?>" title="">Products</a>
+                        <a href="<?= $core->getPageUrl("products" . $plang) ?>" title=""><?= getTitle("products" . $plang) ?></a>
                         <ul class="mb-0 list-unstyled">
                             <? $variable = $core->getproducts([]);
                             foreach ($variable as $k => $v) {
@@ -2788,21 +3004,23 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
                     </li>
 
                     <li>
-                        <a href="<?= $core->getPageUrl("services" . $plang) ?>" title="">Services</a>
+                        <a href="<?= $core->getPageUrl("services" . $plang) ?>" title=""><?= getTitle("services" . $plang) ?></a>
                     </li>
 
 
                     <li class="menu-item-has-children">
-                        <a href="javascript:void(0);" title="">Media Center</a>
+                        <a href="javascript:void(0);" title=""><?= plang("مركز الوسائط", "Media Center") ?></a>
                         <ul class="mb-0 list-unstyled">
-                            <li><a href="<?= $core->getPageUrl("gallery" . $plang) ?>" title="">Gallery</a></li>
-                            <li><a href="<?= $core->getPageUrl("video" . $plang) ?>" title="">Videos</a></li>
+                            <li><a href="<?= $core->getPageUrl("gallery" . $plang) ?>" title=""><?= getTitle("gallery" . $plang) ?></a></li>
+                            <li><a href="<?= $core->getPageUrl("video" . $plang) ?>" title=""><?= getTitle("video" . $plang) ?></a></li>
                         </ul>
                     </li>
 
 
-                    <li><a href="<?= $core->getPageUrl("news" . $plang) ?>" title="">News</a></li>
-                    <li><a href="<?= $core->getPageUrl("contact" . $plang) ?>" title="">Contact Us</a></li>
+                    <li><a href="<?= $core->getPageUrl("news" . $plang) ?>" title=""><?= getTitle("news" . $plang) ?></a></li>
+                    <li><a href="<?= $core->getPageUrl("contact" . $plang) ?>" title=""><?= getTitle("contact" . $plang) ?></a></li>
+                    <li><a href="<?= plang($core->getPageUrl("index"), $core->getPageUrl("indexarabic")) ?>" class="theme-btn"><?= plang('English', 'Arabic') ?></a></li>
+
                 </ul>
             </div>
             <!-- Responsive Menu -->
@@ -2818,7 +3036,7 @@ if (@$exKeywords) $keywords = $keywords . "," . $exKeywords;
             }  ?>
 
             <section>
-                <div class="w-100 pt-170 pb-150 dark-layer3 opc7 position-relative">
+                <div class="breadcrumb-sec w-100 pt-170 pb-150 dark-layer3 opc7 position-relative">
                     <div class="fixed-bg" style="background-image: url(images/pagetop-bg.jpg);"></div>
                     <div class="container">
                         <div class="page-top-wrap w-100">
